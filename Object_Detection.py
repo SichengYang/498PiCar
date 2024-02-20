@@ -8,7 +8,7 @@ import cv2
 from matplotlib import pyplot as plt
    
 # Opening image
-img = cv2.imread("bird.jpg")
+img = cv2.imread("image.jpg")
    
 # OpenCV opens images as BRG 
 # but we want it as RGB We'll 
@@ -20,7 +20,7 @@ img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 # Use minSize because for not 
 # bothering with extra-small 
 # dots that would look like STOP signs
-stop_data = cv2.CascadeClassifier('bird.xml')
+stop_data = cv2.CascadeClassifier('stop_data.xml')
    
 found = stop_data.detectMultiScale(img_gray, 
                                    minSize =(20, 20))
