@@ -1,0 +1,9 @@
+A.	Process Before Departure
+1)	Receive the target position.
+2)	Match to the closest point.
+3)	Check the GPS to get current position (we assume it is at a position that is included in the map.)
+4)	Find the “overall” path (from the starting point to destination, transmit the route (i.e. move south 10 meters, reach point XXX, and turn 90 degrees,…)
+B.	During the Departure Point
+1）	Frequently check the Picar position to see if it is following the planned path. (This part will be controlled by the PID system and road sign recognition module built locally on the car.)
+2）	If the Picar is deviated from the original route, the car will stop, and resend the find path request, a new route will be regenerated and send to Picar.
+C.	Reach to Destination.
