@@ -8,10 +8,7 @@ sensor = adafruit_mmc56x3.MMC5603(i2c)
 time.sleep(1.0)
 while True:
   mag_x, mag_y, mag_z = sensor.magnetic
-  time.sleep(1.0)
   temp = sensor.temperature
-  time.sleep(1.0)
   print("X:{0:10.2f}, Y:{1:10.2f}, Z:{2:10.2f} uT\tTemp:{3:6.1f}*C".format(mag_x, mag_y, mag_z, temp))
-  time.sleep(1.0)
   print("")
   time.sleep(1.0)
