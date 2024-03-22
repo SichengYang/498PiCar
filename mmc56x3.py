@@ -1,5 +1,6 @@
 import board
 import adafruit_mmc56x3
+import time
 i2c = board.I2C() # uses board.SCL and board.SDA
 time.sleep(1.0)
 # i2c = board.STEMMA_I2C() # For using the built-in STEMMA QT connector on a microcontroller
