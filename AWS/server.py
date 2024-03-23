@@ -11,7 +11,7 @@ class MyServer(BaseHTTPRequestHandler):
         self.end_headers()
         result = '{ "type":"position", "x":30, "y":20}'
         json_result = json.loads(result)
-        self.wfile.write(result)
+        self.wfile.write(bytes(result))
 
 if __name__ == "__main__":        
     webServer = HTTPServer((hostName, serverPort), MyServer)
