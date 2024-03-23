@@ -7,7 +7,7 @@ serverPort = 498
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
-        self.send_header("Content-type", "json")
+        self.send_header("Content-type", "text/html")
         self.end_headers()
         result = '{ "type":"position", "x":30, "y":20}'
         json_result = json.loads(result)
