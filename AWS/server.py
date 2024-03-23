@@ -1,7 +1,7 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import time
 
-hostName = "localhost"
+hostName = "ec2-16-171-177-100.eu-north-1.compute.amazonaws.com"
 serverPort = 498
 
 class MyServer(BaseHTTPRequestHandler):
