@@ -10,6 +10,7 @@ class MyServer(BaseHTTPRequestHandler):
         self.send_header("Content-type", "json")
         self.end_headers()
         result = '{ "type":"position", "x":30, "y":20}'
+        json_result = json.loads(result)
         self.wfile.write(result)
 
 if __name__ == "__main__":        
