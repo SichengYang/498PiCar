@@ -2,7 +2,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 import time
 
 hostName = "localhost"
-serverPort = 443
+serverPort = 498
 
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
