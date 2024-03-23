@@ -10,7 +10,7 @@ class MyServer(BaseHTTPRequestHandler):
         self.send_header("Content-type", "text/html")
         self.end_headers()
         result = "{ \"type\":\"position\", \"x\":30, \"y\":20}"
-        self.wfile.write(result, "utf-8")
+        self.wfile.write(result)
 
 if __name__ == "__main__":        
     webServer = HTTPServer((hostName, serverPort), MyServer)
