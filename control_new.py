@@ -21,13 +21,13 @@ def calculate_speed(ch1_data):
                 above_count += 1
 
         # one transition occur
-        if(below_count >= 2 and above_count >= 2):
+        if(below_count >= 3 and above_count >= 3):
             transition += 1
             if(below_count > above_count):
                 below_count = 0
             else:
                 above_count = 0
-    return transition /4 / 0.66
+    return transition /6 / 0.66
 
 parser = argparse.ArgumentParser (description='Data for this program. ')
 parser.add_argument ('--tim', action='store', type=float, default=10, help='loop time')
